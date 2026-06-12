@@ -1,0 +1,164 @@
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.controls input {
+  width: 7rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+}
+
+.chart-block {
+  margin-bottom: 2rem;
+}
+
+.chart-surface {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem 0.5rem 0.5rem 0;
+}
+
+.chart-toggles {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.truth-toggle {
+  cursor: default;
+}
+
+.toggle input {
+  accent-color: #888;
+}
+
+.swatch {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 2px;
+  border: 1px solid #777;
+}
+
+.results {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 32rem;
+}
+
+.results th,
+.results td {
+  text-align: left;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.results td:last-child,
+.results th:last-child {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.results tr.best td {
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.analysis {
+  margin-top: 2.5rem;
+}
+
+.analysis h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.analyse-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: #2a2a2a;
+  color: inherit;
+  cursor: pointer;
+}
+
+.analyse-btn:hover:not(:disabled) {
+  border-color: #888;
+}
+
+.analyse-btn:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.spinner {
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 2px solid #666;
+  border-top-color: #eee;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.analysis-card {
+  margin-top: 1.25rem;
+  padding: 1.1rem 1.3rem;
+  border: 1px solid #444;
+  border-left: 3px solid #4ade80;
+  border-radius: 6px;
+  background: #1d1d1d;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.analysis-card.error {
+  border-left-color: #ef4444;
+  color: #fca5a5;
+}
