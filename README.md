@@ -67,5 +67,4 @@ Two equivalent implementations:
 ---
 
 *Part of an AI engineering portfolio targeting estimation theory research.*
-<img width="624" height="922" alt="image" src="https://github.com/user-attachments/assets/95861462-cc9b-40d0-85d6-ffb459942189" />
 
