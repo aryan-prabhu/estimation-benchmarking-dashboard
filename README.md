@@ -65,6 +65,7 @@ Two equivalent implementations:
   the modular version, with each filter as a separate documented module.
 
 ---
+<img width="624" height="922" alt="image" src="https://github.com/user-attachments/assets/6dfd7514-1207-4741-881d-477ea661e506" />
 
 *Part of an AI engineering portfolio targeting estimation theory research.*
 
